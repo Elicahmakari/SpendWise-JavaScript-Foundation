@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpendWise personal budget and expense tracker">
+    <title>SpendWise | Budget Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">S</span>
+                <h2>SpendWise</h2>
+            </div>
+
+            <nav>
+                <a href="#overview" class="nav-link active">Dashboard</a>
+                <a href="#budget" class="nav-link">My Budget</a>
+                <a href="#categories" class="nav-link">Categories</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Smart money management</p>
+                <small>SpendWise © 2026</small>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="overview">
+
+            <!-- HEADER -->
+            <header class="topbar">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome to your personal finance overview.</p>
+                </div>
+
+                <div class="user-profile">
+                    <div class="avatar">EM</div>
+                    <div>
+                        <strong>My Account</strong>
+                        <small>Personal Finance</small>
+                    </div>
+                </div>
+            </header>
+
+            <!-- BUDGET SUMMARY -->
+            <section class="budget-banner" id="budget">
+                <div>
+                    <p class="banner-label">TOTAL MONTHLY BUDGET</p>
+                    <h2 id="totalBudget">KSh 0.00</h2>
+                    <p class="banner-description">
+                        Your monthly financial overview
+                    </p>
+                </div>
+
+                <div class="budget-info">
+                    <span>Remaining Balance</span>
+                    <strong id="remainingBalance">KSh 0.00</strong>
+                    <span id="expenseSummary" class="status">
+                        Enter your budget details
+                    </span>
+                </div>
+            </section>
+
+            <!-- BUDGET INPUT -->
+            <section class="budget-actions">
+                <h2>Manage Your Budget</h2>
+                <p>
+                    Enter your monthly budget and expenses to calculate
+                    your remaining balance.
+                </p>
+
+                <button id="budgetButton" type="button">
+                    Enter Budget Details
+                </button>
+            </section>
+
+            <!-- CATEGORY CARDS -->
+            <section class="categories" id="categories">
+                <div class="section-heading">
+                    <div>
+                        <h2>Expense Categories</h2>
+                        <p>Organize your spending habits.</p>
+                    </div>
+                </div>
+
+                <div class="category-grid">
+
+                    <article class="category-card">
+                        <div class="category-icon food">🍔</div>
+                        <h3>Food</h3>
+                        <p>Food and groceries</p>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon transport">🚗</div>
+                        <h3>Transport</h3>
+                        <p>Travel and commuting</p>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon rent">🏠</div>
+                        <h3>Rent</h3>
+                        <p>Housing expenses</p>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon entertainment">🎮</div>
+                        <h3>Entertainment</h3>
+                        <p>Leisure and activities</p>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon savings">💰</div>
+                        <h3>Savings</h3>
+                        <p>Future financial goals</p>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon utilities">💡</div>
+                        <h3>Utilities</h3>
+                        <p>Electricity and bills</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer>
+                <p>SpendWise Budget Tracker | Built with HTML, CSS and JavaScript</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
